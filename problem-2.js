@@ -3,12 +3,18 @@ console.log("sentence:- ",string1);
 console.log("search key:- ",string2)
     let string1LowerCase = string1.toLowerCase();
     let string2LowerCase = string2.toLowerCase();
-    if(string1LowerCase.includes(string2LowerCase)){
-        return true;
+    if(typeof string1 != "string" || typeof string2 != "string"){
+        return "invalid string";
     }
     else{
-        return false
+        if(string1LowerCase.includes(string2LowerCase)){
+            return true;
+        }
+        else{
+            return false
+        }
     }
+    
 }
 let input1 = "JOhn Deo";
 let input2 = "ohn";

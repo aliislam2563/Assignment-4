@@ -1,5 +1,5 @@
 function cubeNumber(number){
-    if(  number !== 'number'){
+    if( typeof number !== 'number'){
         return "its not a valid digit"
     }
     cube = Math.pow(number, 3);
