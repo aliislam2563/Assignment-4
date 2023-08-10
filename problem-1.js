@@ -6,6 +6,6 @@ function cubeNumber(number){
     return cube;
 }
 
-let input = 4;
+let input = 3;
 let output = cubeNumber(input);
 console.log(output);
